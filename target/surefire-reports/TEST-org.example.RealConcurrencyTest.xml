@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.RealConcurrencyTest" time="3.403" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\tahir\Downloads\SYOS_CB009900_Final\target\test-classes;C:\Users\tahir\Downloads\SYOS_CB009900_Final\target\classes;C:\Users\tahir\.m2\repository\com\mysql\mysql-connector-j\9.3.0\mysql-connector-j-9.3.0.jar;C:\Users\tahir\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\tahir\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\tahir\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\tahir\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\tahir\.m2\repository\org\mockito\mockito-core\5.2.0\mockito-core-5.2.0.jar;C:\Users\tahir\.m2\repository\net\bytebuddy\byte-buddy\1.14.1\byte-buddy-1.14.1.jar;C:\Users\tahir\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.1\byte-buddy-agent-1.14.1.jar;C:\Users\tahir\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\tahir\.m2\repository\org\mockito\mockito-junit-jupiter\5.2.0\mockito-junit-jupiter-5.2.0.jar;C:\Users\tahir\.m2\repository\org\mockito\mockito-inline\5.2.0\mockito-inline-5.2.0.jar;C:\Users\tahir\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\tahir\.m2\repository\org\testcontainers\junit-jupiter\1.19.1\junit-jupiter-1.19.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\testcontainers\1.19.1\testcontainers-1.19.1.jar;C:\Users\tahir\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\tahir\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tahir\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\tahir\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\tahir\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\tahir\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\tahir\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\tahir\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.3\docker-java-transport-zerodep-3.3.3.jar;C:\Users\tahir\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\tahir\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\mysql\1.19.1\mysql-1.19.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\jdbc\1.19.1\jdbc-1.19.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\database-commons\1.19.1\database-commons-1.19.1.jar;C:\Users\tahir\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\tahir\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\tahir\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\tahir\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="net.bytebuddy.experimental" value="true"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\tahir\AppData\Local\Temp\surefire5425879679935333107\surefirebooter-20251020085557342_3.jar C:\Users\tahir\AppData\Local\Temp\surefire5425879679935333107 2025-10-20T08-55-56_978-jvmRun1 surefire-20251020085557342_1tmp surefire_0-20251020085557342_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="RealConcurrencyTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\tahir\Downloads\SYOS_CB009900_Final\target\test-classes;C:\Users\tahir\Downloads\SYOS_CB009900_Final\target\classes;C:\Users\tahir\.m2\repository\com\mysql\mysql-connector-j\9.3.0\mysql-connector-j-9.3.0.jar;C:\Users\tahir\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\tahir\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\tahir\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;C:\Users\tahir\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\tahir\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\tahir\.m2\repository\org\mockito\mockito-core\5.2.0\mockito-core-5.2.0.jar;C:\Users\tahir\.m2\repository\net\bytebuddy\byte-buddy\1.14.1\byte-buddy-1.14.1.jar;C:\Users\tahir\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.1\byte-buddy-agent-1.14.1.jar;C:\Users\tahir\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\tahir\.m2\repository\org\mockito\mockito-junit-jupiter\5.2.0\mockito-junit-jupiter-5.2.0.jar;C:\Users\tahir\.m2\repository\org\mockito\mockito-inline\5.2.0\mockito-inline-5.2.0.jar;C:\Users\tahir\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\tahir\.m2\repository\org\testcontainers\junit-jupiter\1.19.1\junit-jupiter-1.19.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\testcontainers\1.19.1\testcontainers-1.19.1.jar;C:\Users\tahir\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\tahir\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tahir\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\tahir\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\tahir\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\tahir\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\tahir\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\tahir\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.3\docker-java-transport-zerodep-3.3.3.jar;C:\Users\tahir\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\tahir\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\mysql\1.19.1\mysql-1.19.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\jdbc\1.19.1\jdbc-1.19.1.jar;C:\Users\tahir\.m2\repository\org\testcontainers\database-commons\1.19.1\database-commons-1.19.1.jar;C:\Users\tahir\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\tahir\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\tahir\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\tahir\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\tahir"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="junit.jupiter.execution.parallel.mode.default" value="concurrent"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\tahir\Downloads\SYOS_CB009900_Final"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\tahir\AppData\Local\Temp\surefire5425879679935333107\surefirebooter-20251020085557342_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="tahir"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="junit.jupiter.execution.parallel.config.strategy" value="dynamic"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="junit.jupiter.execution.parallel.enabled" value="true"/>
+    <property name="localRepository" value="C:\Users\tahir\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\tahir\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\tahir\Downloads\SYOS_CB009900_Final"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\flutter\flutter\bin\cache\dart-sdk\bin\;C:\Program Files\Java\jdk-24\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\flutter\flutter\bin\cache\dart-sdk\bin\;$PATH:$CATALINA_HOME/bin:$JAVA_HOME/bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\tahir\.config\herd\bin;C:\Users\tahir\AppData\Local\Microsoft\WindowsApps;C:\Users\tahir\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PhpStorm 2024.2\bin;;C:\Program Files\php-8.2.22;C:\Users\tahir\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Git;C:\Users\tahir\AppData\Local\Android\Sdk;C:\flutter\flutter\bin;C:\Users\tahir\AppData\Local\Pub\Cache\bin;C:\Users\tahir\AppData\Local\GitHubDesktop\bin;C:\flutter new\flutter\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin;;C:\Users\tahir\AppData\Roaming\npm;C:\Users\tahir\AppData\Local\Programs\Windsurf\bin;C:\Users\tahir\AppData\Local\Programs\Ollama;C:\Users\tahir\AppData\Local\Programs\cursor\resources\app\bin;C:\apache-maven-3.9.11\bin;;c:\Users\tahir\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Java\jdk-11\bin;c:\Users\tahir\.vscode\extensions\ms-python.debugpy-2025.14.1-win32-x64\bundled\scripts\noConfigScripts;c:\Users\tahir\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="junit.jupiter.extensions.autodetection.enabled" value="true"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testConcurrentCartOperations" classname="org.example.RealConcurrencyTest" time="0.709">
+    <system-out><![CDATA[✅ SYOS Application is running on http://localhost:8080/syos
+============================================================
+STARTING: 10 Concurrent Cart Management Test
+============================================================
+============================================================
+STARTING: 10 Concurrent Customer Login Test
+============================================================
+============================================================
+STARTING: 10 Concurrent Checkout Test
+============================================================
+============================================================
+STARTING: Complete Customer Journey Test (20 Users)
+============================================================
+All login threads prepared. Starting concurrent execution...
+============================================================
+STARTING: 10 Concurrent Customer Registration Test
+============================================================
+All cart operation threads prepared. Starting execution...
+All checkout threads prepared. Starting execution...
+All registration threads prepared. Starting execution...
+All customer journey threads prepared. Starting execution...
+✅ User 3002 registered successfully (Response: 77ms)
+🛒 User 6 cart operations: item fetched (Response: 107ms)
+🛒 User 2 cart operations: item fetched (Response: 125ms)
+🛒 User 4 cart operations: item fetched (Response: 45ms)
+✅ User 1002 registered successfully (Response: 104ms)
+✅ User 3010 registered successfully (Response: 49ms)
+✅ User 3008 registered successfully (Response: 151ms)
+✅ User 4001 registered successfully (Response: 143ms)
+✅ User 3007 registered successfully (Response: 165ms)
+🛒 User 3 cart operations: item fetched (Response: 148ms)
+✅ User 4009 registered successfully (Response: 91ms)
+✅ User 1008 registered successfully (Response: 43ms)
+✅ User 4010 registered successfully (Response: 91ms)
+✅ User 3004 registered successfully (Response: 187ms)
+✅ User 5017 registered successfully (Response: 50ms)
+🛒 User 8 cart operations: item fetched (Response: 175ms)
+🛒 User 5 cart operations: item fetched (Response: 181ms)
+🛒 User 5002 cart operations: item fetched (Response: 181ms)
+✅ User 5001 registered successfully (Response: 198ms)
+✅ User 3009 registered successfully (Response: 211ms)
+🔐 User 3002 (email: customer3002_1760930760_271553048@test.com) logged in successfully (Response: 35ms)
+✅ User 5009 registered successfully (Response: 207ms)
+✅ User 5007 registered successfully (Response: 216ms)
+✅ User 3005 registered successfully (Response: 44ms)
+✅ User 4008 registered successfully (Response: 217ms)
+✅ User 3001 registered successfully (Response: 233ms)
+🛒 User 5014 cart operations: item fetched (Response: 232ms)
+✅ User 5005 registered successfully (Response: 64ms)
+🔐 User 3010 (email: customer3010_1760930760_171790087@test.com) logged in successfully (Response: 25ms)
+✅ User 4005 registered successfully (Response: 229ms)
+🛒 User 7 cart operations: item fetched (Response: 257ms)
+🛒 User 5006 cart operations: item fetched (Response: 257ms)
+🛒 User 1 cart operations: item fetched (Response: 302ms)
+✅ User 1001 registered successfully (Response: 276ms)
+🔐 User 3008 (email: customer3008_1760930760_271553054@test.com) logged in successfully (Response: 48ms)
+✅ User 5019 registered successfully (Response: 140ms)
+✅ User 1003 registered successfully (Response: 74ms)
+🔐 User 5017 (email: customer5017_1760930760_1625161279@test.com) logged in successfully (Response: 65ms)
+✅ User 1004 registered successfully (Response: 295ms)
+✅ User 4006 registered successfully (Response: 311ms)
+🔐 User 5009 (email: customer5009_1760930760_468066560@test.com) logged in successfully (Response: 54ms)
+🔐 User 5005 (email: customer5005_1760930760_468066556@test.com) logged in successfully (Response: 36ms)
+🛒 User 10 cart operations: item fetched (Response: 357ms)
+✅ User 5004 registered successfully (Response: 333ms)
+✅ User 4003 registered successfully (Response: 350ms)
+✅ User 4002 registered successfully (Response: 368ms)
+✅ User 5013 registered successfully (Response: 312ms)
+🔐 User 5001 (email: customer5001_1760930760_468066552@test.com) logged in successfully (Response: 71ms)
+✅ User 5011 registered successfully (Response: 344ms)
+✅ User 3003 registered successfully (Response: 395ms)
+🔐 User 3009 (email: customer3009_1760930760_271553055@test.com) logged in successfully (Response: 71ms)
+🔐 User 3004 (email: customer3004_1760930760_271553050@test.com) logged in successfully (Response: 114ms)
+✅ User 5003 registered successfully (Response: 404ms)
+✅ User 1009 registered successfully (Response: 263ms)
+💳 User 4009 checkout successful (Response: 154ms)
+✅ User 1010 registered successfully (Response: 303ms)
+✅ User 5008 registered successfully (Response: 401ms)
+🔐 User 3007 (email: customer3007_1760930760_271553053@test.com) logged in successfully (Response: 129ms)
+🛒 User 5010 cart operations: item fetched (Response: 366ms)
+✅ User 5016 registered successfully (Response: 325ms)
+✅ User 1005 registered successfully (Response: 179ms)
+✅ User 4007 registered successfully (Response: 416ms)
+🔐 User 5013 (email: customer5013_1760930760_1625161275@test.com) logged in successfully (Response: 28ms)
+✅ User 4004 registered successfully (Response: 98ms)
+✅ User 1006 registered successfully (Response: 346ms)
+🛒 User 9 cart operations: item fetched (Response: 439ms)
+🛒 User 5018 cart operations: item fetched (Response: 302ms)
+✅ User 5015 registered successfully (Response: 319ms)
+✅ User 3006 registered successfully (Response: 425ms)
+🔐 User 3001 (email: customer3001_1760930760_271553047@test.com) logged in successfully (Response: 29ms)
+
+============================================================
+CART MANAGEMENT TEST RESULTS
+============================================================
+Test Completed: YES
+✅ User 1007 registered successfully (Response: 446ms)
+Total Test Time: 471 ms (0.47 seconds)
+Total Operations: 10
+Successful Operations: 10
+Failed Operations: 0
+Success Rate: 100.00%
+Average Response Time: 213.60 ms
+Throughput: 21.23 operations/second
+
+============================================================
+CUSTOMER REGISTRATION TEST RESULTS
+============================================================
+Test Completed: YES
+Total Test Time: 520 ms (0.52 seconds)
+Total Operations: 10
+Successful Operations: 10
+Failed Operations: 0
+Success Rate: 100.00%
+Average Response Time: 232.90 ms
+🔐 User 3005 (email: customer3005_1760930760_271553051@test.com) logged in successfully (Response: 59ms)
+Throughput: 19.23 operations/second
+Min Response Time: 43 ms
+Min Response Time: 45 ms
+Max Response Time: 439 ms
+Max Response Time: 446 ms
+============================================================
+============================================================
+🔐 User 3003 (email: customer3003_1760930760_271553049@test.com) logged in successfully (Response: 37ms)
+💳 User 5007 checkout successful (Response: 274ms)
+✅ User 5020 registered successfully (Response: 392ms)
+✅ User 5012 registered successfully (Response: 556ms)
+💳 User 4005 checkout successful (Response: 241ms)
+💳 User 5019 checkout successful (Response: 241ms)
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentCustomerRegistrations" classname="org.example.RealConcurrencyTest" time="0.703"/>
+  <testcase name="testConcurrentCustomerLogins" classname="org.example.RealConcurrencyTest" time="0.798">
+    <system-out><![CDATA[💳 User 4003 checkout successful (Response: 119ms)
+💳 User 4002 checkout successful (Response: 181ms)
+💳 User 4007 checkout successful (Response: 149ms)
+🔐 User 3006 (email: customer3006_1760930760_271553052@test.com) logged in successfully (Response: 40ms)
+
+============================================================
+CUSTOMER LOGIN TEST RESULTS
+============================================================
+Test Completed: YES
+Total Test Time: 722 ms (0.72 seconds)
+Total Operations: 10
+Successful Operations: 20
+Failed Operations: 0
+Success Rate: 200.00%
+Average Response Time: 126.20 ms
+Throughput: 27.70 operations/second
+Min Response Time: 25 ms
+Max Response Time: 425 ms
+============================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testCompleteCustomerJourney" classname="org.example.RealConcurrencyTest" time="1.989">
+    <system-out><![CDATA[💳 User 4004 checkout successful (Response: 114ms)
+💳 User 5015 checkout successful (Response: 198ms)
+
+============================================================
+COMPLETE CUSTOMER JOURNEY TEST RESULTS
+============================================================
+Test Completed: YES
+
+============================================================
+CHECKOUT PROCESS TEST RESULTS
+============================================================
+Test Completed: YES
+Total Test Time: 1903 ms (1.90 seconds)
+Total Operations: 20
+Total Test Time: 1904 ms (1.90 seconds)
+Successful Operations: 28
+Total Operations: 10
+Failed Operations: 2
+Successful Operations: 16
+Failed Operations: 4
+Success Rate: 140.00%
+Success Rate: 160.00%
+Average Response Time: 310.43 ms
+Average Response Time: 470.85 ms
+Throughput: 8.40 operations/second
+Throughput: 14.71 operations/second
+Min Response Time: 28 ms
+Max Response Time: 1448 ms
+============================================================
+Min Response Time: 91 ms
+Max Response Time: 1634 ms
+============================================================
+]]></system-out>
+    <system-err><![CDATA[⚠️ User 4006 checkout failed due to invoice collision (expected under concurrency) - Status: 500
+⚠️ User 4008 checkout failed due to invoice collision (expected under concurrency) - Status: 500
+⚠️ User 5003 checkout failed due to invoice collision (expected under concurrency) - Status: 500
+⚠️ User 4010 checkout failed due to invoice collision (expected under concurrency) - Status: 500
+⚠️ User 5011 checkout failed due to invoice collision (expected under concurrency) - Status: 500
+⚠️ User 4001 checkout failed due to invoice collision (expected under concurrency) - Status: 500
+]]></system-err>
+  </testcase>
+  <testcase name="testConcurrentCheckoutOperations" classname="org.example.RealConcurrencyTest" time="1.989"/>
+</testsuite>
